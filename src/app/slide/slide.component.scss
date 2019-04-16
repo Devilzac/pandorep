@@ -1,0 +1,40 @@
+.carousel{
+    max-width: 800px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.principal{
+    .foto{
+        width: auto;
+        height: 600px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .like{
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        img{
+            width: 100px;
+            filter: grayscale(100%);
+            transition: all 0.5s;
+            cursor: pointer;
+            &:hover{
+                filter: grayscale(0%);
+                transition: all 0.5s;
+            }
+            &.favorito{
+                filter: grayscale(0%);
+            }
+        }
+    }
+    .texto{
+        height: 100%;
+    }
+
+}
+
